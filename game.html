@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="game-css.css">
+    <link rel="icon" href="./img/kng-icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+
+    <title>Dawn of KNG</title>
+
+    <script src="./library/jquery-3.1.1.js"></script>
+</head>
+
+<body>
+    <div id="title">
+        KNG vs Shrek<br/> Dawn of Justice
+    </div>
+    <div id="main">
+        <div id="canvas-wrapper">
+            <canvas class="canvas" id="player-canvas" width="1024px" height="700px"></canvas>
+            <canvas class="canvas" id="enemy-canvas" width="1024px" height="700px"></canvas>
+            <canvas class="canvas" id="dead-canvas" width="1024px" height="700px"></canvas>
+            <canvas class="canvas" id="background-canvas" width="1024px" height="700px"></canvas>
+        </div>
+        <div id="controls">
+            <button class="button" id="reload"><img src="./img/reload-icon.png" alt="reload" width="50px"  height="50px"></button>
+            <button class="button" id="audio-on"><img src="./img/Volume-1.ico" width = "50px" height="50px" alt="mute"></button>
+            <button class="button" id="audio-mute"><img src="./img/volume-mute.png" width = "50px" height="50px" alt="mute"></button>
+        </div>
+    </div>
+
+    <div id="text-aside">
+        <p>Developed by <br/>Genoff corp.</p>
+    </div>
+    <div id="high-score"></div>
+    <div id="img-wrapper">
+        <img class="imgSprite" src="./img/enemy.gif" alt="sprite2" id="enemy-sprite">
+        <img src="./img/dead.gif" alt="sprite5" class="imgSprite" id="dead-sprite">
+        <img src="./img/evelShrekEnemy.gif" alt="sprite6" class="imgSprite" id="evil-sprite">
+        <img class="imgSprite" id="main-sprite" src="./img/player.png" alt="sprite1">
+        <img class="imgSprite" id="endgame-sprite" src="./img/endgameShrek.gif" alt="sprite7">
+        <img src="./img/DoneBackground.gif" alt="sprite8" class="imgSprite" id="background-sprite">
+        <img src="./img/jumping-playerEXTT.png" alt="sprite9" class="imgSprite" id="jumping-sprite">
+    </div>
+    <div id="audio-wrapper">
+        <audio id="audio" autoplay> 
+       <source id="song1" src="./song/Chop Suey [8 Bit Cover Tribute to System of a Down] - 8 Bit Universe.mp3" type="audio/mpeg"/>
+           <source src="./song/Gary Jules - Mad World(8bit).mp3" type="audio/mpeg"/>
+      <source src="./song/Johnny Cash - Hurt (8-Bit remix).mp3" type="audio/mpeg"/>
+    
+    </audio>
+    </div>
+</body>
+<script src="./physics.js"></script>
+<script src="./sprite.js"></script>
+<script src="./background.js"></script>
+<script src="./main.js"></script>
+
+
+</html>

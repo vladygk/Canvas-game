@@ -1,0 +1,82 @@
+  .imgSprite {
+      display: none;
+  }
+  
+  #player-canvas {
+      z-index: 5;
+  }
+  
+  body {
+      background-color: black;
+  }
+  
+  #enemy-canvas {
+      z-index: 15;
+  }
+  
+  #dead-canvas {
+      z-index: 7;
+  }
+  
+  .canvas {
+      position: absolute;
+      top: 180px;
+      left: 120px;
+  }
+  
+  #controls {
+      position: absolute;
+      right: 10px;
+  }
+  
+  #main {
+      display: flex;
+      flex-direction: row;
+  }
+  
+  #title {
+      position: absolute;
+      top: 10px;
+      left: 270px;
+      color: lawngreen;
+      text-align: center;
+      font-size: 50px;
+      font-family: 'Press Start 2P', cursive;
+      text-shadow: 4px 4px 4px deeppink;
+  }
+  
+  #background-canvas {
+      z-index: 1;
+  }
+  
+  #text-aside {
+      width: 100px;
+      height: 30px;
+      position: absolute;
+      right: 10px;
+      bottom: 100px;
+      color: lawngreen;
+      text-shadow: 2px 2px 2px deeppink;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 10px;
+      text-align: left;
+  }
+  
+  #high-score {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      padding-left: 5px;
+      border: 2px solid lawngreen;
+      box-shadow: 4px 4px 4px deeppink;
+      width: 320px;
+      height: 40px;
+      position: absolute;
+      right: 20px;
+      top: 120px;
+      color: lawngreen;
+      text-shadow: 2px 2px 2px deeppink;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 20px;
+      text-align: center;
+  }
