@@ -1,2 +1,2 @@
 # Canvas-game
-A game made with JS and canvas
+An endless game made with JS and canvas
